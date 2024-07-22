@@ -1,3 +1,7 @@
-const a = window.location
+const b = window.location
 
-console.log(new URL(a))
+console.log(new URL(b))
+
+const c = new RegExp()
+
+console.log('regexp', c)
