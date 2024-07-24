@@ -1,7 +1,7 @@
 Added two new lines
 Added three new lines
 
-Added four new lines
-Added five new lines
+Added 4 new lines
+Added 5 new lines
 
 Added six new lines
