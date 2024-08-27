@@ -5,3 +5,4 @@ console.log(new URL(b))
 const c = new RegExp()
 
 console.log('regexp', e)
+LOL
