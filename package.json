@@ -1,17 +1,17 @@
 {
 	"name": "root",
-	"private": true,
+	"private": false,
 	"repository": "https://github.com/gitbutlerapp/gitbutler.git",
 	"engines": {
 		"node": ">=20.12"
 	},
 	"type": "module",
-	"packageManager": "pnpm@9.5.0",
+	"packageManager": "pnpm@9.7.0",
 	"scripts": {
 		"dev:ui": "pnpm --filter @gitbutler/ui storybook",
 		"dev:web": "turbo run --filter @gitbutler/web dev --no-daemon",
 		"dev:desktop": "pnpm tauri dev",
-		"dev:internal-tauri": "turbo run --filter @gitbutler/desktop dev",
+		"dev:internal-tauri": "turbo run --filter @gitbutler/desktop watch",
 		"test": "turbo run test --no-daemon",
 		"test:watch": "pnpm --filter @gitbutler/desktop run test:watch",
 		"test:e2e": "pnpm --filter @gitbutler/desktop run test:e2e",
@@ -22,7 +22,7 @@
 		"check": "turbo run check --no-daemon",
 		"tauri": "tauri",
 		"lint": "turbo run //#globallint --no-daemon",
-		"globallint": "prettier --check . && eslint .",
+		"globallint": "prettier --check . && prettier .",
 		"format": "prettier --write .",
 		"fix": "eslint --fix .",
 		"prepare": "pnpm --filter @gitbutler/desktop run prepare",
@@ -35,7 +35,7 @@
 		"@types/node": "^22.3.0",
 		"@typescript-eslint/parser": "^7.13.1",
 		"eslint": "^9.5.0",
-		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-prettier": "^9.1.1",
 		"eslint-import-resolver-typescript": "^3.6.1",
 		"eslint-plugin-import-x": "^0.5.1",
 		"eslint-plugin-storybook": "0.9.0--canary.156.ed236ca.0",
@@ -43,7 +43,7 @@
 		"globals": "^15.6.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.4",
-		"svelte-eslint-parser": "^0.41.0",
+		"svelte-eslint-parser": "^0.41.2",
 		"turbo": "2.1.1",
 		"typescript": "5.4.5",
 		"typescript-eslint": "^7.13.1"
