@@ -15,3 +15,5 @@ function reverse_string92() {
         # Print the reversed string
         echo "Reversed string: $reversed_string"
 }
+
+console.log('ABC123')
