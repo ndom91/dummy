@@ -11,15 +11,7 @@ MORE TEXT
 - New note about something
 
 
-
-
-MORE TEXT
-MORE TEXT
-MORE TEXT
-MORE TEXT
-MORE TEXT
 MORE TEXT
 
 - New note about something
 - New note about something else
-- New note about something else again
