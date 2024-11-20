@@ -1,3 +1,4 @@
+TeST
 function reverse_string() {
         # Read input string
         read -p "Enter a string: " string
